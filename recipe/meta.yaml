@@ -1,5 +1,5 @@
 {% set name = "myhdl" %}
-{% set version = "0.11.46" %}
+{% set version = "0.11.47" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e94b5d6d3b750ee9a11f224e393d8724ef3b8eb683b528207ac90887b6e0ca16
+  sha256: 8aa54502fad0d10525b9be6e0032d1b045aa5754974152c40c7736791cb433b8
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.4
+    - python >=3.8
     - pip
   run:
-    - python >=3.4
+    - python >=3.8
 
 test:
   imports:
