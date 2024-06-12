@@ -1,5 +1,5 @@
 {% set name = "myhdl" %}
-{% set version = "0.11.47" %}
+{% set version = "0.11.48" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8aa54502fad0d10525b9be6e0032d1b045aa5754974152c40c7736791cb433b8
+  sha256: 7a87042c20a5bbc63a2f9c9577e84329e4fab7ade6e703ccec3b582e60bde403
 
 build:
   noarch: python
